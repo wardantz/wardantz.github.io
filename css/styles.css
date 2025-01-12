@@ -1,0 +1,22 @@
+.rounded-circle {
+    border: 3px solid #007bff; /* Ganti dengan warna outline yang diinginkan */
+    padding: 5px; /* Opsional: untuk memberi jarak antara gambar dan outline */
+}
+
+.rounded-custom {
+    border-radius: 1.5rem; /* Ganti angka ini untuk mengatur seberapa bulat sudutnya */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #007bff; /* Ganti dengan warna yang diinginkan */
+}
+
+.icon-lg {
+    font-size: 32px; /* Ubah ukuran sesuai kebutuhan */
+}
