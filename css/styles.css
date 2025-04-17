@@ -1,25 +1,43 @@
 .rounded-circle {
-    border: 3px solid #007bff; /* Ganti dengan warna outline yang diinginkan */
-    padding: 5px; /* Opsional: untuk memberi jarak antara gambar dan outline */
+    border: 3px solid #007bff; /* Warna outline */
+    padding: 6px; /* Memberikan jarak antara gambar dan outline */
+    display: block;
+    margin: auto; /* Memastikan gambar berada di tengah */
 }
 
 .rounded-custom {
-    border-radius: 1.5rem; /* Ganti angka ini untuk mengatur seberapa bulat sudutnya */
+    border-radius: 1.5rem; /* Sudut membulat */
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Mengatasi tata letak jika layar lebih kecil */
 }
 
 .social-icons a {
-    color: #007bff; /* Ganti dengan warna yang diinginkan */
+    color: #007bff; /* Warna ikon */
+    transition: transform 0.3s ease-in-out; /* Animasi efek hover */
 }
 
-.icon-lg {
-    font-size: 32px; /* Ubah ukuran sesuai kebutuhan */
+.social-icons a:hover {
+    transform: scale(1.2); /* Efek membesar saat hover */
 }
-.svg-lg {
-    font-size: 32px; /* Ubah ukuran sesuai kebutuhan */
+
+.icon-lg, .svg-lg {
+    font-size: 32px; /* Ukuran ikon */
+}
+
+/* Responsif untuk tampilan lebih kecil */
+@media (max-width: 768px) {
+    .icon-lg, .svg-lg {
+        font-size: 24px;
+    }
+    .rounded-circle {
+        padding: 4px;
+    }
+    .social-icons {
+        gap: 15px;
+    }
 }
